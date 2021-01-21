@@ -1,13 +1,25 @@
 ﻿body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightblue;
+    
 }
 label {
     font-size: 20px;
-    color: lightsteelblue;
     width: 150px;
     display: inline-block;
 }
 
-ul.quiz-props li {
-    list-style-type: disc;
+
+
+div {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }

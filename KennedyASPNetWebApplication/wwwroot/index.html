@@ -1,41 +1,59 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title> Prof. G. Anderson's Fan Site</title>
+    <title> Welcome! </title>
     <link href="css/main.css" rel="stylesheet" />
+    <link href="img/logo.jpg" rel="icon" />
+
 
 </head>
 
 <body>
-    <h1> Professor Greg Anderson  </h1>
-    <img src="img/Greg-Anderson-Award-Feature-Image.jpg" />
-    <p> He is our professor</p>
+    <h2> Kennedy Daniel  </h2>
+    <div>
+        <img class="img" src="img/IMG-6411.jpg" />
+    </div>
+    <h4> What do I hope to get out of our 413 class?</h4>
+
+    <p>
+        Opportunities to get practice with and gain confidence in my ability to use .NET MVC framework, C#, APIs,
+        and REACT. <br /> I'm also excited to get more practice solving problems and learning  about the potential applications for all the cool things we're learning.
+        <br />I really enjoy Professor Hilton's teaching style, so I'm looking forward to having time to continue learning from him.
+    </p>
+
+    <h4> Top 3 jobs I'm interested in pursuing:</h4>
+    <ol class="quiz-props">
+        <li>Product Manager</li>
+        <li>Software Engineer (Emphasis in UX/UI) </li>
+        <li>Director of Corporate Social Impact</li>
+
+    </ol>
+
+    <h4>Enter your cumulative grade for each of the <br /> following sections to determine your current grade:</h4>
+
+    <form action="#" method="get" onsubmit="return false">
+        <label>Assignments:</label>
+        <input id="assignments" />
+        <br />
+        <label> Group Project: </label>
+        <input id="group" />
+        <br />
+        <label>Quizzes: </label>
+        <input id="quizzes" />
+        <br />
+        <label>Exams: </label>
+        <input id="exams" />
+        <br />
+        <label>INTEX: </label>
+        <input id="intex" />
+        <br />
+        <br />
+        <input type="submit" value="Calculate Your Grade" id="submitButton" onclick="calculateGrade()" />
+    </form>
     <br />
-    <p> Pop quiz: we love him bc:</p>
-    <ul class="quiz-props">
-        <li>A: hair</li>
-        <li>B: clothes</li>
-        <li>C: smile</li>
-        <li>D: personality</li>
-        <li>E: all of the above</li>
-    </ul>
+    <h2 id="output"></h2>
 
- <h2>Fan Mail</h2>
-
- <form>
-     <label>From:</label>
-     <input id="from" />
-     <br />
-     <label> Email: </label>
-     <input id="email" />
-     <br />
-     <label>Subject:</label>
-     <input id="subject"/>
-     <br />
-     <label>Message:</label>
-     <textarea id="message" rows="5"></textarea>
-     <input type="submit" value="Send Message" id="submitButton"/>
- </form>
     <script src="js/site.js"></script>
+
 </body>
 </html>
